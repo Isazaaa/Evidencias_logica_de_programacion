@@ -23,7 +23,7 @@ Resolver los siguientes ejercicios:
 # Solución
 
 ## Ejercicos While 
-1. 
+* Primer Ejercicio
 
 ```java
 import java.util.Scanner;
@@ -49,7 +49,7 @@ public class Actvdad5 {
     }
 }
 ```
-2. 
+* Segundo Ejercicio
 
 ```java 
 import java.util.Scanner;
@@ -87,7 +87,7 @@ public class Ejercicio2While {
 
 ## Ejercicios - do while
 
-1. 
+* Primer Ejercicio
 
 ```java 
 import java.util.Scanner;
@@ -119,7 +119,7 @@ public class Ejercicio1dowhile {
 }
 ```
 
-2. 
+* Segundo Ejercicio
 
 ```java
 import java.util.Scanner;
@@ -154,7 +154,7 @@ public class Ejercicio2dowhile {
 
 ## Ejercicios for
 
-1. 
+* Primer Ejercicio 
 
 ```java 
 public class Ejercicio1for {
@@ -170,7 +170,7 @@ public class Ejercicio1for {
     }
 ```
 
-2. 
+* Segundo Ejercicio
 
 ```java
 public class Ejercicio2for {
