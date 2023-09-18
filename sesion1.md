@@ -1,7 +1,7 @@
 <!-- No borrar o modificar -->
 [Inicio](./index.md)
 
-## Sesión 1 
+# Sesion 1 
 
 # Actividad 1: Diagnóstico de aprendizajes previos (Trabajo grupal)
 
