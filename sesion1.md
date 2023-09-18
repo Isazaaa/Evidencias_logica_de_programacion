@@ -1,9 +1,10 @@
 <!-- No borrar o modificar -->
 [Inicio](./index.md)
 
-# Sesion 1 
+## Sesión 1 
 
-<!-- Su documentación aquí -->
+
+<!-- Su documentacion aqui -->
 
 # Actividad 1: Diagnóstico de aprendizajes previos (Trabajo grupal)
 
@@ -64,10 +65,6 @@ Los lenguajes de bajo nivel son aquellos que están más cercanos al lenguaje de
 El lenguaje ensamblador se utiliza para programar a nivel más cercano al hardware, pero de manera más legible para los humanos.
 El lenguaje de máquina es el lenguaje nativo del procesador y se compone de códigos binarios que la CPU puede ejecutar directamente.
 Los lenguajes de alto nivel son más cercanos al lenguaje humano y abstractos de la arquitectura de la máquina, lo que los hace más fáciles de programar y entender.
-
-
-
-
 
 6.	¿Cómo se utiliza la lógica booleana en la programación?
 Se utiliza para evaluar expresiones lógicas y condiciones. Se basa en el álgebra de Boole y utiliza dos valores: verdadero y falso. Es fundamental para la toma de decisiones en las estructuras de control de flujo y para realizar operaciones condicionales en la programación.
