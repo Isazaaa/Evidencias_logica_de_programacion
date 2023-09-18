@@ -25,5 +25,18 @@ Operadores lógicos: Escribe un programa que tome dos valores booleanos ingresad
 Operador ternario: Escribe un programa que tome un número entero ingresado por el usuario y utilice el operador ternario para determinar si el número es positivo o negativo. Luego, muestra el resultado en la salida.
 
 
+![Alt text](<carbon (1).png>)
 
+![Alt text](<carbon (2).png>)
 
+![Alt text](<carbon (3).png>)
+
+![Alt text](<carbon (4).png>)
+
+![Alt text](<carbon (5).png>)
+
+![Alt text](<carbon (6).png>)
+
+![Alt text](<carbon (7).png>)
+
+![Alt text](<carbon (8).png>)
