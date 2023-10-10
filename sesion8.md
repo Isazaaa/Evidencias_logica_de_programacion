@@ -150,12 +150,5 @@ public class Sesion8 {
 }
 ```
 
-5.
-
-```java
-
-
-```
-
 
 
