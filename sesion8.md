@@ -14,9 +14,10 @@ Implementar los siguientes métodos:
 4. Escribe un método que reciba una cadena de texto como parámetro y devuelva el número de palabras que contiene.
 5. Escribe un método que reciba una cadena de texto como parámetro y devuelva una nueva cadena con todas las palabras en orden alfabético.
 
-# SOLUCIÓN
+# Solución
 
-1. 
+1.
+
 ```java 
 public class Sesion8 {
 
@@ -37,8 +38,124 @@ public class Sesion8 {
 }
 ```
 
+2.
+
+```java
+import java.util.Scanner;
+/**
+ *
+ * @author Juan
+ */
+public class Sesion8 {
+
+    public static int contarVocales(String texto) {
+        int contador = 0;
+        texto = texto.toLowerCase(); 
+
+        for (int i = 0; i < texto.length(); i++) {
+            char caracter = texto.charAt(i);
+            if (caracter == 'a' || caracter == 'e' || caracter == 'i' || caracter == 'o' || caracter == 'u') {
+                contador++;
+            }
+        }
+
+        return contador;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Ingrese una cadena de texto: ");
+        String texto = scanner.nextLine();
+
+        int resultado = contarVocales(texto);
+        System.out.println("El número de vocales en la cadena es: " + resultado);
+
+        scanner.close();
+    }
+}
+```
+
+3.
+
+```java
+import java.util.Scanner;
+/**
+ *
+ * @author Juan
+ */
+public class Sesion8 {
+
+    public static String cambiarMayusculasMinisculas(String texto) {
+        StringBuilder resultado = new StringBuilder();
+
+        for (int i = 0; i < texto.length(); i++) {
+            char caracter = texto.charAt(i);
+            if (Character.isUpperCase(caracter)) {
+                resultado.append(Character.toLowerCase(caracter));
+            } else if (Character.isLowerCase(caracter)) {
+                resultado.append(Character.toUpperCase(caracter));
+            } else {
+                resultado.append(caracter);
+            }
+        }
+
+        return resultado.toString();
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Ingrese una cadena de texto: ");
+        String texto = scanner.nextLine();
+
+        String resultado = cambiarMayusculasMinisculas(texto);
+        System.out.println("Texto con mayúsculas y minúsculas intercambiadas: " + resultado);
+
+        scanner.close();
+    }
+}
+```
+
+4.
+
+```java
+import java.util.Scanner;
+/**
+ *
+ * @author Juan
+ */
+public class Sesion8 {
+
+    public static int contarPalabras(String texto) {
+        if (texto == null || texto.isEmpty()) {
+            return 0;
+        }
+
+        String[] palabras = texto.split("\\s+");
+        return palabras.length;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Ingrese una cadena de texto: ");
+        String texto = scanner.nextLine();
+
+        int resultado = contarPalabras(texto);
+        System.out.println("El número de palabras en la cadena es: " + resultado);
+
+        scanner.close();
+    }
+}
+```
+
+5.
+
+```java
 
 
+```
 
 
 
