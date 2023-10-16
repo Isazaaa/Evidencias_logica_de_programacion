@@ -104,8 +104,82 @@ public class AppNotas {
 
 2.Crear un ejemplo de Array y otro de ArrayList para visualizar sus diferencias.
 
+Array
+
+```java
+public class Sesion10 {
+
+    public static void main(String[] args) {
+        // Declaración y creación de un array de calificaciones
+        double[] calificaciones = {4.8, 4.0, 3.6, 4.3, 3.9};
+
+        // Calcula el promedio de las calificaciones
+        double promedio = calcularPromedio(calificaciones);
+
+        // Muestra el resultado
+        System.out.println("Calificaciones:");
+        for (int i = 0; i < calificaciones.length; i++) {
+            System.out.println("Estudiante " + (i + 1) + ": " + calificaciones[i]);
+        }
+
+        System.out.println("Promedio: " + promedio);
+    }
+
+    public static double calcularPromedio(double[] calificaciones) {
+        double suma = 0;
+
+        // Suma todas las calificaciones en el array
+        for (int i = 0; i < calificaciones.length; i++) {
+            suma += calificaciones[i];
+        }
+
+        // Calcula el promedio dividiendo la suma por la cantidad de calificaciones
+        double promedio = suma / calificaciones.length;
+
+        return promedio;
+    }
+}
+```
 
 
+Arraylist
+
+```java
+import java.util.ArrayList;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Juan
+ */
+public class Sesion7 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Declaración y creación de un ArrayList de cadenas
+        ArrayList<String> estudiantes = new ArrayList<String>();
+
+        // Solicitar al usuario que ingrese nombres de estudiantes
+        while (true) {
+            System.out.print("Ingrese el nombre del estudiante (o 'salir' para terminar): ");
+            String nombre = input.nextLine();
+
+            if (nombre.equalsIgnoreCase("salir")) {
+                break;
+            }
+
+            estudiantes.add(nombre);
+        }
+
+        // Mostrar los nombres de los estudiantes
+        System.out.println("Nombres de estudiantes:");
+        for (String estudiante : estudiantes) {
+            System.out.println(estudiante);
+        }
+    }
+}
+```
 
 
 

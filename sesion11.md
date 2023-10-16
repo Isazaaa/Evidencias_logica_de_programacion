@@ -12,6 +12,40 @@
 2. Desarrollar un algoritmo que realice la conversión de binario a decimal.
 
 
+```java
+import java.util.Scanner;
+
+
+public class Sesion11 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Ingresa un número binario: ");
+        String binario = input.nextLine();
+
+        int decimal = binarioADecimal(binario);
+
+        System.out.println("El número decimal equivalente es: " + decimal);
+    }
+
+    public static int binarioADecimal(String binario) {
+        int decimal = 0;
+        int longitud = binario.length();
+
+        for (int i = 0; i < longitud; i++) {
+            char digito = binario.charAt(i);
+            int valor = Character.getNumericValue(digito);
+            int potencia = (int) Math.pow(2, longitud - 1 - i);
+            decimal += valor * potencia;
+        }
+
+        return decimal;
+    }
+}
+```
+
+
 
 
 
