@@ -107,7 +107,11 @@ public class AppNotas {
 Array
 
 ```java
-public class Sesion10 {
+/**
+ *
+ * @author Juan
+ */
+public class Sesion7 {
 
     public static void main(String[] args) {
         // Declaración y creación de un array de calificaciones
