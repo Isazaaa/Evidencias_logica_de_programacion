@@ -9,8 +9,47 @@
 
 1. Basándose en el algoritmo 1 de la sesión 11, aplicar la siguiente variante: Dado un conjunto de números enteros, se debe determinar si existe algún número que aparezca más de una vez. Si es así, se deben imprimir todos los números que aparezcan más de una vez.
 
+## Solución
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ *
+ * @author Juan
+ */
+public class Sesion11 {
+
+
+    public static void main(String[] args) {
+       
+        int[] numeros = {1, 2, 3, 4, 5, 2, 4, 7, 8, 8};
+
+  
+        List<Integer> numerosRepetidos = new ArrayList<>();
+
+        for (int i = 0; i < numeros.length; i++) {
+            for (int j = i + 1; j < numeros.length; j++) {
+                if (numeros[i] == numeros[j] && !numerosRepetidos.contains(numeros[i])) {
+                    numerosRepetidos.add(numeros[i]);
+                }
+            }
+        }
+
+        if (!numerosRepetidos.isEmpty()) {
+            System.out.println("Los números repetidos son: " + numerosRepetidos);
+        } else {
+            System.out.println("No hay ningún número repetido");
+        }
+    }
+}
+```
+
+
 2. Desarrollar un algoritmo que realice la conversión de binario a decimal.
 
+## Solución
 
 ```java
 import java.util.Scanner;
