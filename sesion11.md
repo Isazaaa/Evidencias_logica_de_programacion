@@ -47,7 +47,8 @@ public class Sesion11 {
 ```
 
 
-2. Desarrollar un algoritmo que realice la conversión de binario a decimal.
+
+2.Desarrollar un algoritmo que realice la conversión de binario a decimal.
 
 ## Solución
 
